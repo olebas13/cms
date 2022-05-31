@@ -75,6 +75,6 @@ public class CategoryResource {
             @ApiResponse(code = 400,message = "Invalid request")
     })
     public ResponseEntity<Category> updateCategory(@PathVariable("id") String id, CategoryRequest category) {
-        return new ResponseEntity<>(this.categoryService.update(id, category), HttpStatus.OK);
+        return new ResponseEntity<>(new Category(), HttpStatus.OK);
     }
 }

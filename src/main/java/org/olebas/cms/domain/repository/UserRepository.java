@@ -1,8 +1,7 @@
 package org.olebas.cms.domain.repository;
 
 import org.olebas.cms.domain.model.User;
-import org.springframework.stereotype.Service;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-@Service
-public class UserRepository extends AbstractRepository<User> {
+public interface UserRepository extends JpaRepository<User, String> {
 }
